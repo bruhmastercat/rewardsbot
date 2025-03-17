@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: stellar-reward-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SECRET_KEY
+        value: SDCENVT5J5RBP62HZXXNPLN4JBNGPQWORU54TNHTZPTTFZVVZXCRZ7D2
+      - key: ASSET_CODE
+        value: ATM
+      - key: ASSET_ISSUER
+        value: GA2BXRU2MJUZQPPH4GIDOKPYLMQSTJE45LJXPURSCMMSAM6Z7HEDKGE2
+      - key: REWARD_RATE
+        value: "0.001"
